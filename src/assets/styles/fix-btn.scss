@@ -1,0 +1,23 @@
+.btn-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 20px 64px;
+  background-color: #fff;
+  
+}
+
+.btn-fixed .van-button {
+  height: 160px!important;
+  line-height: 160px!important;
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+ .btn-fixed {
+  height: calc(200px+ constant(safe-area-inset-bottom));
+  height: calc(200px + env(safe-area-inset-bottom));
+ }
+}

@@ -1,0 +1,103 @@
+.fixed-top {
+  position: relative;
+  top: 0;
+  z-index: 10;
+  height: 80px;
+  width: 100vw;
+  background-color: #fff;
+  font-size: 28px;
+}
+
+.tags {
+  box-sizing: border-box;
+  padding:  6px 20px;
+  background-color: #fff;
+}
+
+.tag + .tag {
+  margin-left: 10px;
+}
+
+.patient {
+
+  &-list {
+    border-top: 10px solid #fff;
+    // border-bottom: 10px solid #fff;
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    position: relative;
+    min-width: 50%;
+    max-width: 50%;
+    height: 140px;
+    padding: 24px 12px 28px 30px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }  
+
+  &-circle {
+    min-width: 82px;
+    height: 82px;
+    margin-right: 10px;
+  }
+
+  &-name {
+    font-size: 28px;
+    font-weight: 400;
+    color: #323233;
+    line-height: 40px;
+  }
+
+
+  &-days {
+    width: 62px;
+    height: 32px;
+    background: #7DCE7F;
+    border-radius: 4px;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 24px;
+    color: #fff;
+  }
+
+  &-no {
+    font-size: 24px;
+    font-weight: 400;
+    color: #969799;
+    line-height: 32px;
+  }
+  &-inhosp {
+    font-size:24rpx;
+  }
+}
+.at-tag--active {
+  color: #EE0A24;
+  background: rgba(238, 10, 36, 0.1);
+  border-color:rgba(238, 10, 36, 0.1);
+}
+.icon-stop {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border-bottom: 0;
+  border-right: 0;
+  border: 24rpx solid #FA6400;
+  border-color: #FA6400 transparent transparent #FA6400;
+}
+
+.icon-stop .stop-p {
+  color: #fff;
+  font-size: 20rpx;
+  position: absolute;
+  top: -22rpx;
+  left: -19rpx;
+}
+.hide{
+  display: none;
+}
+@import '../../assets/styles/fix-btn.scss';
+@import '../../assets/styles/public.scss';
+
+

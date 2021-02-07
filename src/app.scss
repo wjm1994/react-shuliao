@@ -1,0 +1,81 @@
+html,
+body,
+.container {
+  width: 100vw;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  outline: none;
+}
+
+
+.container {
+  background-color: #F3F6F8;
+  min-height: 100vh;
+}
+
+body {
+  .tabbar.container {
+    min-height: calc(100vh - 100px);
+  }
+}
+
+
+
+@for $value from 1 to 10 {
+	$cls: $value * 5;
+	.mgt-#{$cls} {
+    margin-top: (2rpx * $cls);
+  }
+  .mgb-#{$cls} {
+    margin-bottom: ($cls * 2rpx);
+  }
+  .mgl-#{$cls} {
+    margin-left: ($cls * 2rpx);
+  }
+  .mgr-#{$cls} {
+    margin-right: ($cls * 2rpx);
+  }
+  .pdt-#{$cls} {
+    padding-top: ($cls * 2rpx);
+  }
+  .pdb-#{$cls} {
+    padding-bottom: ($cls * 2rpx);
+  }
+  .pdl-#{$cls} {
+    padding-left: ($cls * 2rpx);
+  }
+  .pdr-#{$cls} {
+    padding-right: ($cls * 2rpx);
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}

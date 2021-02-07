@@ -1,0 +1,116 @@
+.info-head{
+  background-color: #fff;
+  padding:10px;
+  color:#969799;
+  font-size:28rpx;
+}
+.info-head .van-col{
+  height:50rpx;
+  line-height: 50rpx;
+}
+.info-head .change-phone{
+  color:#4A90E2;
+  cover-image{
+    width: 30rpx;
+      height: 30rpx;
+      margin-top: 4rpx;
+  }
+}
+.content{
+  background: #fff;
+  margin-top:20rpx;
+  margin-bottom: calc(100rpx+ constant(safe-area-inset-bottom));
+  margin-bottom: calc(100rpx + env(safe-area-inset-bottom));
+  padding-top: 20rpx;
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 40rpx;
+}
+.content .timeline-item:before {
+  top: 8rpx;
+  width: 4rpx;
+  display: block;
+  content: '';
+  position: absolute;
+  left: 20rpx;
+  z-index: 0;
+  height: 100%;
+  background:#eee;
+}
+.content .timeline-icon {
+  position: absolute;
+  left: 10rpx;
+  top: 8rpx;
+  z-index: 10;
+  width: 18rpx;
+  height: 18rpx;
+  background: white;
+  border-radius: 50%;
+  border: 4rpx solid #4A90E2;
+}
+.timeline-content {
+  padding-left: 50rpx;
+}
+.timeline-title {
+  position: relative;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+}
+.timeline-title .timeline-title-data {
+  border-radius: 20px;
+  padding: 3px 0;
+  display: flex;
+}
+.timeline-content {
+  padding-left: 50rpx;
+}
+.form-item {
+  margin-bottom: 20rpx;
+  clear: both;
+}
+.content .timeline-content .input-block {
+  padding: 10rpx;
+  font-size:24rpx ;
+}
+.change-listcss {
+  /* background-color: #F4F6FB !important; */
+  border-radius: 8rpx;
+  font-size: 24rpx;
+}
+.detail-part {
+  width: 100%;
+  height: 60rpx;
+  line-height: 44rpx;
+  box-sizing: border-box;
+}
+.color-warning {
+  color: #ec8301 !important;
+}
+.btn-fixed .push-course{
+  border:none;
+}
+.phone-input input{
+  width:400rpx;
+}
+.pop-up .van-button{
+  width:50%;
+  background: #fff;
+  border-radius: 0;
+  color:#4A90E2;
+  border:none;
+  float: left;
+}
+.pop-up{
+  width:100%;
+}
+.pop-up .van-popup{
+  top:30% !important;
+  width:70% !important;
+  border-radius: 14rpx
+}
+.education-title{
+  width:calc(100% - 200rpx);
+}
+@import '../../assets/styles/fix-btn.scss';
+@import '../../assets/styles/public.scss';
